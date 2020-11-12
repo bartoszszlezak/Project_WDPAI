@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    background: transparent linear-gradient(180deg, #5438C0 0%, #2E9A4B 0%, #36BAB6 100%, #48A44E 100%) 0% 0% no-repeat padding-box;
+}
+#sign_up{
+    width: 100vw;
+    height: 5vh;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+
+}
+
+#button_sign{
+    background: transparent linear-gradient(180deg, #BDBD13 0%, #5A5A12 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 53px;
+    color: white;
+    height: 80%;
+    border: none;
+    margin: 1em 0 1em 1em;
+    grid-column-start: 9;
+    align-items: center;
+}
+
+.container{
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 50%;
+    text-align: center;
+}
+
+.login-container{
+    width: 50%;
+}
+form.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 40vh;
+    background: #FFFFFFB3 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 6px #00000033;
+    border: 1px solid #707070;
+    border-radius: 92px;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 50%;
+    margin: 1em;
+    padding: 1em;
+}
+
+#button_login{
+    background: transparent linear-gradient(180deg, #BDBD13 0%, #5A5A12 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 53px;
+
+    width: 50%;
+    border: none;
+    color: white;
+    margin: 1em;
+    padding: 1em;
+    line-height: 2.5em;
+}
+
