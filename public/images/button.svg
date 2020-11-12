@@ -1,0 +1,13 @@
+<svg id="Switch_On" data-name="Switch On" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84" height="40" viewBox="0 0 84 40">
+    <defs>
+        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#bdbd13"/>
+            <stop offset="1" stop-color="#5a5a12"/>
+        </linearGradient>
+    </defs>
+    <rect id="Rectangle_1001" data-name="Rectangle 1001" width="84" height="40" rx="20" fill="url(#linear-gradient)"/>
+    <g id="Rectangle_1002" data-name="Rectangle 1002" transform="translate(47)" fill="#fff" stroke="#bdbd13" stroke-width="1">
+        <rect width="37" height="40" rx="18.5" stroke="none"/>
+        <rect x="0.5" y="0.5" width="36" height="39" rx="18" fill="none"/>
+    </g>
+</svg>
