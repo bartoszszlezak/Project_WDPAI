@@ -70,6 +70,10 @@ section{
     opacity: 1;
     width: 30vw;
     height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #second{
@@ -78,6 +82,10 @@ section{
     opacity: 1;
     width: 30vw;
     height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #third{
@@ -86,6 +94,10 @@ section{
     opacity: 1;
     width: 30vw;
     height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #footer_list{
@@ -114,4 +126,77 @@ section{
 
 #logo{
     width: 40%;
+}
+
+#photo1{
+    background-image: url(../images/zdjęcie1.jpg);
+    background-size: cover;
+    border-radius: 100%;
+    width: 25%;
+    height: 25%;
+    margin-bottom: 1em;
+}
+
+#photo2{
+    background-image: url(../images/zdjęcie2.jpg);
+    background-size: cover;
+    border-radius: 100%;
+    width: 25%;
+    height: 25%;
+    margin-bottom: 1em;
+}
+
+#photo3{
+    background-image: url(../images/zdjęcie3.jpg);
+    background-size: cover;
+    border-radius: 100%;
+    width: 25%;
+    height: 25%;
+    margin-bottom: 1em;
+}
+
+.informations{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    color: white;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.specialisation{
+    color: white;
+    font-size: 1.5em;
+    border-bottom: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+.phone{
+    color: white;
+    font-size: 1em;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email{
+    color: white;
+    font-size: 1em;
+    border-bottom: 1px solid grey;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
