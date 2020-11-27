@@ -107,3 +107,164 @@ section{
 #menu_bar{
     display: none;
 }
+
+
+.informations{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    color: white;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.specialisation{
+    color: white;
+    font-size: 1.5em;
+    border-bottom: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+.phone{
+    color: white;
+    font-size: 1em;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email{
+    color: white;
+    font-size: 1em;
+    border-bottom: 1px solid grey;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#photo1{
+    background-image: url(../images/zdjęcie1.jpg);
+    background-size: cover;
+    border-radius: 100%;
+    width: 25%;
+    height: 25%;
+    margin-bottom: 1em;
+}
+
+#first{
+    background: transparent linear-gradient(180deg, #2FA163 0%, #36BAB6 100%) 0% 0% no-repeat padding-box;
+    border-radius: 52px;
+    opacity: 1;
+    width: 25vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about_me{
+    width: 30vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#recommend{
+    width: 10vw;
+    height: 55vh;
+    background: transparent linear-gradient(180deg, #2FA163 0%, #36BAB6 100%) 0% 0% no-repeat padding-box;
+}
+
+#comments{
+    width: 20vw;
+    height: 55vh;
+    background: transparent linear-gradient(180deg, #2FA163 0%, #36BAB6 100%) 0% 0% no-repeat padding-box;
+}
+
+#ab_me{
+    border: 2px solid grey;
+    height: 50%;
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 2em;
+}
+
+#inf{
+    text-align: left;
+    font: normal normal normal 14px/24px Arial;
+    letter-spacing: 0px;
+    color: #2699FB;
+    opacity: 1;
+    padding: 0.2em;
+}
+h1{
+    text-align: left;
+    font: normal normal normal 40px/40px Georgia;
+    letter-spacing: 0px;
+    color: #2699FB;
+    opacity: 1;
+    padding: 0.2em;
+}
+
+#add_feedback{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+#feedback{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+#feedback > input{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font: normal normal normal 1em Arial;
+    letter-spacing: 0px;
+    color: #ABD3F3;
+    opacity: 1;
+    overflow: scroll;
+}
+
+
+#order_visit{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button_order_visit{
+    background: transparent linear-gradient(180deg, #BDBD13 0%, #5A5A12 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 53px;
+    opacity: 1;
+    color: white;
+    width: 50%;
+    height: 75%;
+}
