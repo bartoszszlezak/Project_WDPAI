@@ -174,7 +174,7 @@ section {
 
 .header_container{
     height: 60vh;
-    width: 20vw;
+    width: 22vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,11 +183,7 @@ section {
     margin: 0;
 }
 
-#schedule{
-    background: aqua;
-    height: 90%;
-    width: 100%;
-}
+
 
 #last_feedbacks{
     height: 90%;
@@ -392,7 +388,104 @@ section {
     margin: 1em;
 }
 
+#second_order{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10%;
+    width: 100%;
+    padding: 0;
+    margin: 1em;
+}
+
+#third_order{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10%;
+    width: 100%;
+    padding: 0;
+    margin: 1em;
+}
+
+#four_order{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10%;
+    width: 100%;
+    padding: 0;
+    margin: 1em;
+}
+
+#five_order{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10%;
+    width: 100%;
+    padding: 0;
+    margin: 1em;
+}
+
+#six_order{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10%;
+    width: 100%;
+    padding: 0;
+    margin: 1em;
+}
+
 #order_photo1 {
+    background-image: url(../images/zdjęcie1.jpg);
+    background-size: cover;
+    border-radius: 100%;
+    width: 15%;
+    height: 100%;
+}
+
+#order_photo2{
+    background-image: url(../images/zdjęcie1.jpg);
+    background-size: cover;
+    border-radius: 100%;
+    width: 15%;
+    height: 100%;
+}
+
+#order_photo3{
+    background-image: url(../images/zdjęcie1.jpg);
+    background-size: cover;
+    border-radius: 100%;
+    width: 15%;
+    height: 100%;
+}
+
+
+#order_photo4{
+    background-image: url(../images/zdjęcie1.jpg);
+    background-size: cover;
+    border-radius: 100%;
+    width: 15%;
+    height: 100%;
+}
+
+#order_photo5{
+    background-image: url(../images/zdjęcie1.jpg);
+    background-size: cover;
+    border-radius: 100%;
+    width: 15%;
+    height: 100%;
+}
+
+
+#order_photo6{
     background-image: url(../images/zdjęcie1.jpg);
     background-size: cover;
     border-radius: 100%;
@@ -414,6 +507,71 @@ section {
     border-radius: 43px;
     width: 75%;
 }
-.message{
+#schedule{
+    background: #EEEEEE 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #707070;
+    opacity: 1;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+#first_schedule{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10%;
+    width: 100%;
+    padding: 0;
+    margin: 1em;
+}
+#second_schedule{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10%;
+    width: 100%;
+    padding: 0;
+    margin: 1em;
+}
+#third_schedule{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10%;
+    width: 100%;
+    padding: 0;
+    margin: 1em;
+}
+#schedule_photo1{
+    background-image: url(../images/zdjęcie1.jpg);
+    background-size: cover;
+    border-radius: 100%;
+    width: 15%;
+    height: 100%;
+}
+#schedule_photo2{
+    background-image: url(../images/zdjęcie1.jpg);
+    background-size: cover;
+    border-radius: 100%;
+    width: 15%;
+    height: 100%;
+}
+#schedule_photo3{
+    background-image: url(../images/zdjęcie1.jpg);
+    background-size: cover;
+    border-radius: 100%;
+    width: 15%;
+    height: 100%;
+}
+@media only screen and (max-device-width: 420px) {
 
 }
