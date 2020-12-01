@@ -573,5 +573,132 @@ section {
     height: 100%;
 }
 @media only screen and (max-device-width: 420px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+    }
 
+    #footer_list{
+        display: none;
+    }
+
+    .header_container{
+        width: 90%;
+        height: 40%;
+    }
+
+    header{
+        height: 5vh;
+        margin-bottom: auto;
+    }
+
+    .option{
+        display: none;
+    }
+    #search{
+        display: none;
+    }
+    #search_form{
+        display: none;
+    }
+
+    #menu_bar{
+        display: flex;
+        font-size: 4em;
+    }
+    #search_icon{
+        display: flex;
+        font-size: 2em;
+    }
+    #bell_icon{
+        display: flex;
+        font-size: 2em;
+    }
+    #use_icon{
+        display: flex;
+        font-size: 2em;
+    }
+
+    #first{
+        display: none;
+    }
+
+    #second_comment{
+        display: none;
+    }
+
+    #third_comment{
+        display: none;
+    }
+    .header_container > p{
+        font-size: 3.5em;
+    }
+
+    #new_orders{
+        height: 60vh;
+    }
+
+    #first_order{
+        height: 20%;
+    }
+    #second_order{
+        height: 20%;
+    }
+    #third_order{
+        height: 20%;
+    }
+    #four_order{
+        height: 20%;
+    }
+    #five_order{
+        height: 20%;
+    }
+    #six_order{
+        height: 20%;
+    }
+
+    .order_bar{
+        height: 50%;
+        font-size: 2em;
+    }
+
+    #schedule{
+        height: 20vh;
+    }
+
+    #first_schedule{
+        height: 25%;
+    }
+
+    #second_schedule{
+        height: 25%;
+    }
+
+    #third_schedule{
+        height: 25%;
+    }
+
+    .message{
+        font-size: 2em;
+    }
+
+    #last_feedbacks{
+        height: 20vh;
+    }
+
+    #first_comment{
+        height: 100%;
+    }
+
+    #who_when1 > p{
+        font-size: 2.5em;
+    }
+
+
+    #comment1{
+        font-size: 2em;
+    }
 }
