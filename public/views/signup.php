@@ -7,9 +7,9 @@
         <title>Sign up</title>
     </head>
     <body>
-        <div id="sign">
-            <button id="button_sign">Sign in</button>
-        </div>
+        <p id="sign">
+            <a id="button_sign" href="/login">Sign in</a>
+        </p>
         <div class="container">
             <div class="logo">
                 <img src="public/images/logo.svg">
@@ -20,7 +20,6 @@
                     <input name="name" type="text" placeholder="Full Name">
                     <input name="email" type="text" placeholder="email@email.com">
                     <input name="birthday" type="text" placeholder="Birthday">
-                    <input name="ident" type="number" placeholder="ID">
                     <input name="password" type="password" placeholder="Password">
                     <p class="account">Click if you are a doctor
                         <label class="toggle">

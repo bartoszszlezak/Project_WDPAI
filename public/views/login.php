@@ -10,9 +10,9 @@
 
     <body>
 
-        <div id="sign">
-            <button id="button_sign">Sign up</button>
-        </div>
+            <p id="sign">
+                <a id="button_sign" href="/signup">Sign up</a>
+            </p>
         <div class="container">
 
             <div class="logo">
