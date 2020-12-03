@@ -17,9 +17,9 @@
             <div class="signup-container">
                 <form class="signup">
                     <p class="account">Create an Account</p>
-                    <input name="name" type="text" placeholder="Full Name">
-                    <input name="email" type="text" placeholder="email@email.com">
-                    <input name="birthday" type="text" placeholder="Birthday">
+                    <input name="name" type="text" placeholder="Name">
+                    <input name="surname" type="text" placeholder="Surname">
+                    <input name="email" type="text" placeholder="Email">
                     <input name="password" type="password" placeholder="Password">
                     <p class="account">Click if you are a doctor
                         <label class="toggle">
