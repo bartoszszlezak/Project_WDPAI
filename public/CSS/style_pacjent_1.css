@@ -129,27 +129,25 @@ section{
 }
 
 #photo1{
-    background-image: url(../images/zdjęcie1.jpg);
-    background-size: cover;
-    border-radius: 100%;
     width: 25%;
     height: 25%;
     margin-bottom: 1em;
 }
 
-#photo2{
-    background-image: url(../images/zdjęcie2.jpg);
-    background-size: cover;
+img{
+    height: 100%;
     border-radius: 100%;
+    width: 100%;
+}
+
+#photo2{
     width: 25%;
     height: 25%;
     margin-bottom: 1em;
 }
 
 #photo3{
-    background-image: url(../images/zdjęcie3.jpg);
-    background-size: cover;
-    border-radius: 100%;
+
     width: 25%;
     height: 25%;
     margin-bottom: 1em;

@@ -46,7 +46,7 @@
                     <div id="previous"><i class="fas fa-chevron-right"></i></div>
                 </div>
                 <div id="first">
-                    <div id="photo1"></div>
+                    <div id="photo1"><img src="public/images/zdjęcie3.jpg"></div>
                     <div class="informations">
                         <p class="name">Name Surname</p>
                         <p class="specialisation">Cardiologist</p>
@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div id="second">
-                    <div id="photo2"></div>
+                    <div id="photo2"><img src="public/images/zdjęcie1.jpg"></div>
                     <div class="informations">
                         <p class="name">Name Surname</p>
                         <p class="specialisation">Cardiologist</p>
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div id="third">
-                    <div id="photo3"></div>
+                    <div id="photo3"><img src="public/images/zdjęcie2.jpg"></div>
                     <div class="informations">
                         <p class="name">Name Surname</p>
                         <p class="specialisation">Cardiologist</p>

@@ -48,7 +48,7 @@
             </div>
 
             <div id="first">
-                <div id="photo1"></div>
+                <div id="photo1"><img src="public/images/zdjęcie1.jpg"></div>
                 <div class="informations">
                     <p class="name">Name Surname</p>
                     <p class="specialisation">Cardiologist</p>

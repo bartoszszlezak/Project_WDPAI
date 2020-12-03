@@ -156,12 +156,15 @@ section{
 }
 
 #photo1{
-    background-image: url(../images/zdjęcie1.jpg);
-    background-size: cover;
-    border-radius: 100%;
     width: 25%;
     height: 25%;
     margin-bottom: 1em;
+}
+
+img{
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 #first{
@@ -345,7 +348,7 @@ h1{
     grid-column: 2 / 4;
     grid-row: 2/4;
     background: #BDBD13;
-    background-image: url(../images/zdjęcie1.jpg);
+    background-image: url(../images/person.png);
     background-size: cover;
     border-radius: 100%;
     padding: 1em;
@@ -355,7 +358,7 @@ h1{
     grid-column: 2 / 4;
     grid-row: 2/4;
     background: #BDBD13;
-    background-image: url(../images/zdjęcie2.jpg);
+    background-image: url(../images/person.png);
     background-size: cover;
     border-radius: 100%;
     padding: 1em;
@@ -365,7 +368,7 @@ h1{
     grid-column: 2 / 4;
     grid-row: 2/4;
     background: #BDBD13;
-    background-image: url(../images/zdjęcie3.jpg);
+    background-image: url(../images/person.png);
     background-size: cover;
     border-radius: 100%;
     padding: 1em;

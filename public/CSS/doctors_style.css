@@ -138,15 +138,18 @@ section {
     align-items: center;
     justify-content: center;
 }
-
 #photo1{
-    background-image: url(../images/zdjęcie1.jpg);
-    background-size: cover;
-    border-radius: 100%;
     width: 25%;
     height: 25%;
     margin-bottom: 1em;
 }
+
+img{
+    height: 100%;
+    border-radius: 100%;
+    width: 100%;
+}
+
 #first{
     background: transparent linear-gradient(180deg, #2FA163 0%, #36BAB6 100%) 0% 0% no-repeat padding-box;
     border-radius: 52px;
@@ -224,7 +227,7 @@ section {
     grid-column: 2 / 4;
     grid-row: 2/4;
     background: #BDBD13;
-    background-image: url(../images/zdjęcie1.jpg);
+    background-image: url(../images/person.png);
     background-size: cover;
     border-radius: 100%;
     padding: 1em;
@@ -234,7 +237,7 @@ section {
     grid-column: 2 / 4;
     grid-row: 2/4;
     background: #BDBD13;
-    background-image: url(../images/zdjęcie2.jpg);
+    background-image: url(../images/person.png);
     background-size: cover;
     border-radius: 100%;
     padding: 1em;
@@ -244,7 +247,7 @@ section {
     grid-column: 2 / 4;
     grid-row: 2/4;
     background: #BDBD13;
-    background-image: url(../images/zdjęcie3.jpg);
+    background-image: url(../images/person.png);
     background-size: cover;
     border-radius: 100%;
     padding: 1em;
@@ -444,7 +447,7 @@ section {
 }
 
 #order_photo1 {
-    background-image: url(../images/zdjęcie1.jpg);
+    background-image: url(../images/person.png);
     background-size: cover;
     border-radius: 100%;
     width: 15%;
@@ -452,7 +455,7 @@ section {
 }
 
 #order_photo2{
-    background-image: url(../images/zdjęcie1.jpg);
+    background-image: url(../images/person.png);
     background-size: cover;
     border-radius: 100%;
     width: 15%;
@@ -460,7 +463,7 @@ section {
 }
 
 #order_photo3{
-    background-image: url(../images/zdjęcie1.jpg);
+    background-image: url(../images/person.png);
     background-size: cover;
     border-radius: 100%;
     width: 15%;
@@ -469,7 +472,7 @@ section {
 
 
 #order_photo4{
-    background-image: url(../images/zdjęcie1.jpg);
+    background-image: url(../images/person.png);
     background-size: cover;
     border-radius: 100%;
     width: 15%;
@@ -477,7 +480,7 @@ section {
 }
 
 #order_photo5{
-    background-image: url(../images/zdjęcie1.jpg);
+    background-image: url(../images/person.png);
     background-size: cover;
     border-radius: 100%;
     width: 15%;
@@ -486,7 +489,7 @@ section {
 
 
 #order_photo6{
-    background-image: url(../images/zdjęcie1.jpg);
+    background-image: url(../images/person.png);
     background-size: cover;
     border-radius: 100%;
     width: 15%;
@@ -552,21 +555,21 @@ section {
     margin: 1em;
 }
 #schedule_photo1{
-    background-image: url(../images/zdjęcie1.jpg);
+    background-image: url(../images/person.png);
     background-size: cover;
     border-radius: 100%;
     width: 15%;
     height: 100%;
 }
 #schedule_photo2{
-    background-image: url(../images/zdjęcie1.jpg);
+    background-image: url(../images/person.png);
     background-size: cover;
     border-radius: 100%;
     width: 15%;
     height: 100%;
 }
 #schedule_photo3{
-    background-image: url(../images/zdjęcie1.jpg);
+    background-image: url(../images/person.png);
     background-size: cover;
     border-radius: 100%;
     width: 15%;
