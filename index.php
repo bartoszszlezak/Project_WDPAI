@@ -10,5 +10,7 @@ Routing::get('signup', 'DefaultController');
 Routing::get('doctors', 'DefaultController');
 Routing::get('specialist', 'DefaultController');
 Routing::get('pacjent', 'DefaultController');
+Routing::post('login', 'SecurityController');
+
 
 Routing::run($path);
