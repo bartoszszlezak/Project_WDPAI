@@ -8,10 +8,6 @@ class DefaultController extends AppController {
         $this -> render('login');
     }
 
-    public function signup(){
-        $this -> render('signup');
-    }
-
     public function doctors(){
         $this -> render('doctors_view');
     }
@@ -21,6 +17,4 @@ class DefaultController extends AppController {
     public function pacjent(){
         $this -> render('pacjent_page_1');
     }
-
-
 }
