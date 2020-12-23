@@ -213,6 +213,18 @@ img{
     display: none;
 }
 
+.read_more{
+    color: white;
+    font-size: 1em;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+
 @media only screen and (max-device-width: 420px) {
     .specialist{
         flex-direction: column;

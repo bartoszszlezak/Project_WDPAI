@@ -24,6 +24,7 @@ body{
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 53px;
     margin: 1em 0 1em 1em;
+    text-decoration: none;
 }
 
 .container{

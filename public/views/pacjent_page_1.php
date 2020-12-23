@@ -52,6 +52,7 @@
                         <p class="specialisation">Cardiologist</p>
                         <p class="phone">T:    +1 456 789 123</p>
                         <p class="email">E:  name.surname@gmail.com</p>
+                        <a class="read_more" href="/specialist">Read about me</a>
                     </div>
                 </div>
                 <div id="second">
@@ -61,6 +62,7 @@
                         <p class="specialisation">Cardiologist</p>
                         <p class="phone">T:    +1 456 789 123</p>
                         <p class="email">E:  name.surname@gmail.com</p>
+                        <a class="read_more" href="/specialist">Read about me</a>
                     </div>
                 </div>
                 <div id="third">
@@ -70,6 +72,7 @@
                         <p class="specialisation">Cardiologist</p>
                         <p class="phone">T:    +1 456 789 123</p>
                         <p class="email">E:  name.surname@gmail.com</p>
+                        <a class="read_more" href="/specialist">Read about me</a>
                     </div>
                 </div>
 
