@@ -41,40 +41,46 @@
             </header>
 
             <section class="specialist">
+
                 <div class="next_prev">
                     <div id="next"><i class="fas fa-chevron-left"></i></div>
                     <div id="previous"><i class="fas fa-chevron-right"></i></div>
                 </div>
+
                 <div id="first">
                     <div id="photo1"><img src="public/images/zdjęcie3.jpg"></div>
                     <div class="informations">
-                        <p class="name">Name Surname</p>
-                        <p class="specialisation">Cardiologist</p>
-                        <p class="phone">T:    +1 456 789 123</p>
-                        <p class="email">E:  name.surname@gmail.com</p>
+                        <p class="name"><?= $info[1]->getName(); ?> <?= $info[1]->getSurname(); ?></p>
+                        <p class="specialisation"><?= $info[0]->getSpecialization(); ?></p>
+                        <p class="phone">T:    <?= $info[0]->getPhone(); ?></p>
+                        <p class="email">E:    <?= $info[1]->getEmail(); ?></p>
                         <a class="read_more" href="/specialist">Read about me</a>
                     </div>
                 </div>
+
                 <div id="second">
                     <div id="photo2"><img src="public/images/zdjęcie1.jpg"></div>
                     <div class="informations">
-                        <p class="name">Name Surname</p>
-                        <p class="specialisation">Cardiologist</p>
-                        <p class="phone">T:    +1 456 789 123</p>
-                        <p class="email">E:  name.surname@gmail.com</p>
+                        <p class="name"><?= $info[3]->getName(); ?> <?= $info[3]->getSurname(); ?></p>
+                        <p class="specialisation"><?= $info[2]->getSpecialization(); ?></p>
+                        <p class="phone">T:    <?= $info[2]->getPhone(); ?></p>
+                        <p class="email">E:  <?= $info[3]->getEmail(); ?></p>
                         <a class="read_more" href="/specialist">Read about me</a>
                     </div>
                 </div>
+
+
                 <div id="third">
                     <div id="photo3"><img src="public/images/zdjęcie2.jpg"></div>
                     <div class="informations">
-                        <p class="name">Name Surname</p>
-                        <p class="specialisation">Cardiologist</p>
-                        <p class="phone">T:    +1 456 789 123</p>
-                        <p class="email">E:  name.surname@gmail.com</p>
+                        <p class="name"><?= $info[5]->getName(); ?> <?= $info[5]->getSurname(); ?></p>
+                        <p class="specialisation"><?= $info[4]->getSpecialization(); ?></p>
+                        <p class="phone">T:    <?= $info[4]->getPhone(); ?></p>
+                        <p class="email">E:  <?= $info[5]->getEmail(); ?></p>
                         <a class="read_more" href="/specialist">Read about me</a>
                     </div>
                 </div>
+
 
             </section>
 
