@@ -50,23 +50,17 @@
             <div id="first">
                 <div id="photo1"><img src="public/images/zdjęcie1.jpg"></div>
                 <div class="informations">
-                    <p class="name">Name Surname</p>
-                    <p class="specialisation">Cardiologist</p>
-                    <p class="phone">T:    +1 456 789 123</p>
-                    <p class="email">E:  name.surname@gmail.com</p>
+                    <p class="name"><?= $vUser->getName(); ?> <?= $vUser->getSurname(); ?></p>
+                    <p class="specialisation"><?= $vUser->getSpecialization(); ?></p>
+                    <p class="phone">T:    <?= $vUser->getPhone(); ?></p>
+                    <p class="email">E:  <?= $vUser->getEmail(); ?></p>
                 </div>
             </div>
 
             <div id="about_me">
                 <div id="ab_me">
                     <h1>About Me</h1>
-                    <p id="inf">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.</p>
+                    <p id="inf"><?= $vUser->getMoreInfo(); ?></p>
 
                 </div>
                 <div id="add_feedback">

@@ -8,7 +8,7 @@ $path = parse_url($path, PHP_URL_PATH);
 Routing::get('index', 'DefaultController');
 Routing::get('signup', 'SecurityController');
 Routing::get('doctors', 'DefaultController');
-Routing::get('specialist', 'DefaultController');
+Routing::get('specialist', 'SpecialistController');
 Routing::get('pacjent', 'DefaultController');
 Routing::post('login', 'SecurityController');
 Routing::post('moreInfo', 'SecurityController');

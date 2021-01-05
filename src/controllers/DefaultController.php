@@ -20,9 +20,7 @@ class DefaultController extends AppController {
     public function doctors(){
         $this -> render('doctors_view');
     }
-    public function specialist(){
-        $this -> render('specialist_info');
-    }
+
     public function pacjent(){
         $this -> render('pacjent_page_1', [
             'info' => $this->moreInfoRepository->getRandomInfo()

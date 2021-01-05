@@ -54,7 +54,7 @@
                         <p class="specialisation"><?= $info[0]->getSpecialization(); ?></p>
                         <p class="phone">T:    <?= $info[0]->getPhone(); ?></p>
                         <p class="email">E:    <?= $info[1]->getEmail(); ?></p>
-                        <a class="read_more" href="/specialist">Read about me</a>
+                        <a class="read_more" href="/specialist?id=<?= $info[0]->getId(); ?>">Read about me</a>
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@
                         <p class="specialisation"><?= $info[2]->getSpecialization(); ?></p>
                         <p class="phone">T:    <?= $info[2]->getPhone(); ?></p>
                         <p class="email">E:  <?= $info[3]->getEmail(); ?></p>
-                        <a class="read_more" href="/specialist">Read about me</a>
+                        <a class="read_more" href="/specialist?id=<?= $info[2]->getId(); ?>">Read about me</a>
                     </div>
                 </div>
 
@@ -77,7 +77,7 @@
                         <p class="specialisation"><?= $info[4]->getSpecialization(); ?></p>
                         <p class="phone">T:    <?= $info[4]->getPhone(); ?></p>
                         <p class="email">E:  <?= $info[5]->getEmail(); ?></p>
-                        <a class="read_more" href="/specialist">Read about me</a>
+                        <a class="read_more" href="/specialist?id=<?= $info[4]->getId(); ?>">Read about me</a>
                     </div>
                 </div>
 
