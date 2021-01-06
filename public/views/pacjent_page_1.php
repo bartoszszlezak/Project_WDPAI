@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="public/CSS/style_pacjent_1.css">
+    <script rel="text/javascript" src="./public/js/search.js" defer></script>
     <script src="https://kit.fontawesome.com/f39f9c152c.js" crossorigin="anonymous"></script>
     <title>MEDOSE</title>
 </head>
@@ -25,9 +26,7 @@
                     MY VISITS
                 </div>
                 <div id="search">
-                    <form id="search_form">
                         <input id="search_specialist" placeholder="Search for a specialist">
-                    </form>
                 </div>
                 <div class="option" id="search_icon">
                     <i class="fas fa-search"></i>
@@ -42,12 +41,7 @@
 
             <section class="specialist">
 
-                <div class="next_prev">
-                    <div id="next"><i class="fas fa-chevron-left"></i></div>
-                    <div id="previous"><i class="fas fa-chevron-right"></i></div>
-                </div>
-
-                <div id="first">
+                <div>
                     <div id="photo1"><img src="public/images/zdjęcie3.jpg"></div>
                     <div class="informations">
                         <p class="name"><?= $info[1]->getName(); ?> <?= $info[1]->getSurname(); ?></p>
@@ -58,7 +52,7 @@
                     </div>
                 </div>
 
-                <div id="second">
+                <div>
                     <div id="photo2"><img src="public/images/zdjęcie1.jpg"></div>
                     <div class="informations">
                         <p class="name"><?= $info[3]->getName(); ?> <?= $info[3]->getSurname(); ?></p>
@@ -70,7 +64,7 @@
                 </div>
 
 
-                <div id="third">
+                <div>
                     <div id="photo3"><img src="public/images/zdjęcie2.jpg"></div>
                     <div class="informations">
                         <p class="name"><?= $info[5]->getName(); ?> <?= $info[5]->getSurname(); ?></p>
@@ -117,3 +111,17 @@
         </div>
     </body>
 </html>
+
+
+<template id="specialist-template">
+    <div id="specialist-doctor">
+        <div id="photo1"><img src="public/images/zdjęcie3.jpg"></div>
+        <div class="informations">
+            <p class="name">name</p>
+            <p class="specialisation">specialization</p>
+            <p class="phone">phone</p>
+            <p class="email">email</p>
+            <a class="read_more" href="/specialist?id=">Read about me</a>
+        </div>
+    </div>
+</template>

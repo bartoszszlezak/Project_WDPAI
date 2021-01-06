@@ -31,5 +31,20 @@ class VUserRepository extends Repository
         );
     }
 
+    public function getBySurname(string $searchString){
+
+        $searchString = '%'.strtolower($searchString).'%';
+
+        $stmt = $this->database->connect()->prepare('
+            SELECT * FROM public.vuser WHERE role = \'doctor\' and LOWER(surname) LIKE :search  
+            LIMIT 3
+        ');
+
+        $stmt->bindParam(':search', $searchString, PDO::PARAM_STR);
+        $stmt->execute();
+
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
 
 }

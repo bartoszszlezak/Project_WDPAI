@@ -12,6 +12,7 @@ Routing::get('specialist', 'SpecialistController');
 Routing::get('pacjent', 'DefaultController');
 Routing::post('login', 'SecurityController');
 Routing::post('moreInfo', 'SecurityController');
+Routing::post('search', 'SpecialistController');
 
 
 Routing::run($path);
