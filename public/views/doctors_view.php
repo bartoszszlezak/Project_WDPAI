@@ -36,7 +36,9 @@
                 <i class="far fa-bell"></i>
             </div>
             <div class="option" id="use_icon">
-                <i class="far fa-user"></i>
+                <a href="/logout">
+                    <i class="far fa-user"></i>
+                </a>
             </div>
         </header>
 
@@ -44,10 +46,10 @@
             <div id="first">
                 <div id="photo1"><img src="public/images/zdjęcie3.jpg"></div>
                 <div class="informations">
-                    <p class="name">Name Surname</p>
-                    <p class="specialisation">Cardiologist</p>
-                    <p class="phone">T:    +1 456 789 123</p>
-                    <p class="email">E:  name.surname@gmail.com</p>
+                    <p class="name"><?= $vuser->getName(); ?> <?= $vuser->getSurname(); ?></p>
+                    <p class="specialisation"><?= $vuser->getSpecialization(); ?></p>
+                    <p class="phone">T:    <?= $vuser->getPhone(); ?></p>
+                    <p class="email">E:  <?= $vuser->getEmail(); ?></p>
                 </div>
             </div>
 

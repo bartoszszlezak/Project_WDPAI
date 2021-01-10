@@ -2,13 +2,16 @@
 
 require_once 'AppController.php';
 require_once __DIR__ .'/../models/User.php';
+require_once __DIR__ .'/../support/Auth.php';
 require_once __DIR__.'/../repository/UserRepository.php';
 require_once __DIR__.'/../repository/MoreInfoRepository.php';
+
 
 class SecurityController extends AppController {
     public function login()
     {
         $userRepository = new UserRepository();
+        $auth = new Auth();
 
 
         if (!$this->isPost()) {
@@ -18,7 +21,7 @@ class SecurityController extends AppController {
         $email = $_POST['email'];
         $password = $_POST['password'];
 
-        $user = $userRepository->getUser($email);
+        $user = $userRepository->getUserByEmail($email);
 
         if(!$user){
             return $this->render('login', ['messages' => ['User not exist!']]);
@@ -32,7 +35,7 @@ class SecurityController extends AppController {
             return $this->render('login', ['messages' => ['Wrong password!']]);
         }
 
-
+        $auth->login($user->getId());
 
         if ($user->getRole() == 'doctor') {
             $url = "http://$_SERVER[HTTP_HOST]";
@@ -49,6 +52,7 @@ class SecurityController extends AppController {
     public function signup(){
 
         $userRepository = new UserRepository();
+        $auth = new Auth();
 
         if (!$this->isPost()) {
             return $this->render('signup');
@@ -59,9 +63,8 @@ class SecurityController extends AppController {
         $name = $_POST['name'];
         $surname = $_POST['surname'];
         $role = $_POST['doctor'] == "on" ? "pacient" : "doctor";
-//        $ = $_POST['doctor'] == "on" ? "pacient" : "doctor";
 
-        $user = $userRepository->getUser($email);
+        $user = $userRepository->getUserByEmail($email);
 
         if($user){
             return $this->render('signup', ['messages' => ['User with this email exist!']]);
@@ -74,14 +77,16 @@ class SecurityController extends AppController {
             'surname' => $surname,
             'role' => $role
         ]);
+        $user = $userRepository->getUserByEmail($email);
+        $auth->login($user->getId());
 
         $url = "http://$_SERVER[HTTP_HOST]";
         if($role == "doctor"){
-            $user = $userRepository->getUser($email);
-            header("Location: {$url}/moreInfo?id={$user->getId()}");
+            $user = $userRepository->getUserByEmail($email);
+            header("Location: {$url}/moreInfo");
         }
         else{
-            header("Location: {$url}/login");
+            header("Location: {$url}/pacjent");
         }
 
     }
@@ -89,12 +94,22 @@ class SecurityController extends AppController {
     public function moreInfo(){
 
         $moreInfoRepository = new MoreInfoRepository();
+        $auth = new Auth();
+        $url = "http://$_SERVER[HTTP_HOST]";
+
+        if(!$auth->authenticated()){
+            header("Location: {$url}/login");
+        }
+
+        if(!$auth->getAuthUser()->getRole() == "doctor"){
+            header("Location: {$url}/login");
+        }
 
         if (!$this->isPost()) {
             return $this->render('more_info');
         }
 
-        $id = $_GET['id'];
+        $id = $auth->getAuthUser()->getId();
         $phone = $_POST['phone'];
         $specialization = $_POST['specialization'];
         $about_me = $_POST['about_me'];
@@ -105,6 +120,15 @@ class SecurityController extends AppController {
             'specialization' => $specialization,
             'about_me' => $about_me,
         ]);
+
+
+    }
+
+    public function logout(){
+
+        $auth = new Auth();
+
+        $auth->logout();
 
         $url = "http://$_SERVER[HTTP_HOST]";
         header("Location: {$url}/login");

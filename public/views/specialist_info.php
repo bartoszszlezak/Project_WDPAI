@@ -36,16 +36,14 @@
                 <i class="far fa-bell"></i>
             </div>
             <div class="option" id="use_icon">
-                <i class="far fa-user"></i>
+                <a href="/logout">
+                    <i class="far fa-user"></i>
+                </a>
             </div>
         </header>
 
         <section>
 
-            <div class="next_prev">
-                <div id="next"><i class="fas fa-chevron-left"></i></div>
-                <div id="previous"><i class="fas fa-chevron-right"></i></div>
-            </div>
 
             <div id="first">
                 <div id="photo1"><img src="public/images/zdjęcie1.jpg"></div>
@@ -64,19 +62,18 @@
 
                 </div>
                 <div id="add_feedback">
-                    <form id="feedback">
-                        <input placeholder="Add your feedback">
+                    <form id="feedback" method="post">
+                        <input type="text" name="feedback" placeholder="Add your feedback">
+                        <input id="button_order_visit" type="submit" value="Send">
                     </form>
                 </div>
-                <div id="order_visit">
-                    <button id="button_order_visit">Order a visit</button>
-                </div>
+
             </div>
 
             <div id="recommend">
                 <button id="button_recommend">Recommend</button>
                 <button id="button_dont_recommend">Don't recommend</button>
-                <button id="button_add_feedback">Add your feedback</button>
+                <button id="button_add_feedback">Order Visit</button>
             </div>
 
             <div id="comments">

@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 
 require_once 'Routing.php';
 
@@ -13,6 +15,7 @@ Routing::get('pacjent', 'DefaultController');
 Routing::post('login', 'SecurityController');
 Routing::post('moreInfo', 'SecurityController');
 Routing::post('search', 'SpecialistController');
+Routing::post('logout', 'SecurityController');
 
 
 Routing::run($path);

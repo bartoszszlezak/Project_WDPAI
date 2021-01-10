@@ -35,7 +35,9 @@
                     <i class="far fa-bell"></i>
                 </div>
                 <div class="option" id="use_icon">
-                    <i class="far fa-user"></i>
+                    <a href="/logout">
+                        <i class="far fa-user"></i>
+                    </a>
                 </div>
             </header>
 
