@@ -35,15 +35,13 @@
                     <i class="far fa-bell"></i>
                 </div>
                 <div class="option" id="use_icon">
-                    <a href="/logout">
-                        <i class="far fa-user"></i>
-                    </a>
+                    <a href="/logout" id="logout">Log out</a>
                 </div>
             </header>
 
             <section class="specialist">
 
-                <div>
+                <div id="first">
                     <div id="photo1"><img src="public/images/zdjęcie3.jpg"></div>
                     <div class="informations">
                         <p class="name"><?= $info[1]->getName(); ?> <?= $info[1]->getSurname(); ?></p>
@@ -54,7 +52,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div id="second">
                     <div id="photo2"><img src="public/images/zdjęcie1.jpg"></div>
                     <div class="informations">
                         <p class="name"><?= $info[3]->getName(); ?> <?= $info[3]->getSurname(); ?></p>
@@ -66,7 +64,7 @@
                 </div>
 
 
-                <div>
+                <div id="third">
                     <div id="photo3"><img src="public/images/zdjęcie2.jpg"></div>
                     <div class="informations">
                         <p class="name"><?= $info[5]->getName(); ?> <?= $info[5]->getSurname(); ?></p>

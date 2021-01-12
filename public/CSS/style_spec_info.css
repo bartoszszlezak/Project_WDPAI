@@ -56,6 +56,12 @@ header{
     font-size: 2em;
 }
 
+#logout{
+    color: white;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
 section{
     width: 100vw;
     display: flex;
@@ -93,16 +99,6 @@ section{
     width: 40%;
 }
 
-.next_prev{
-    display: none;
-}
-#next{
-    display: none;
-}
-
-#previous{
-    display: none;
-}
 
 #menu_bar{
     display: none;
@@ -527,21 +523,6 @@ h1{
     .fa-chevron-left{
         font-size: 1em;
     }
-    #next{
-        display: flex;
-        width: 25%;
-        height: 100%;
-        justify-content: flex-start;
-        align-items: center;
-        margin-left: 1em;
-    }
-    #next>i{
-        font-size: 3em;
-    }
-    #previous{
-        display: none
-    }
-
     #first{
         width: 90%;
         height: 50vh;
@@ -674,14 +655,9 @@ h1{
         color: white;
         text-decoration: none;
     }
-    #use_icon > a > i{
-        font-size: 2em;
-        color: white;
-        text-decoration: none;
-    }
 
-    #use_icon > a{
-        font-size: 2em;
+    #logout{
+        font-size: 2.5em;
         color: white;
         text-decoration: none;
     }

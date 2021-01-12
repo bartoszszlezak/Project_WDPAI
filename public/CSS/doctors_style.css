@@ -34,6 +34,12 @@ header{
     align-items: center;
 }
 
+#logout{
+    color: white;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
 #search{
     width: 30%;
     height: 50%;
@@ -623,6 +629,12 @@ img{
     #use_icon{
         display: flex;
         font-size: 2em;
+    }
+
+    #logout{
+        color: white;
+        text-decoration: none;
+        font-size: 1.25em;
     }
 
     #first{

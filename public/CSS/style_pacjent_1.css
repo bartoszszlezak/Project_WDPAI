@@ -51,8 +51,10 @@ header{
     height: 100%;
 }
 */
-.option > i{
-    font-size: 2em;
+#logout{
+    color: white;
+    text-decoration: none;
+    font-size: 1.25em;
 }
 
 section{
@@ -175,16 +177,6 @@ img{
     align-items: center;
     justify-content: center;
 }
-.next_prev{
-    display: none;
-}
-#next{
-    display: none;
-}
-
-#previous{
-    display: none;
-}
 
 #menu_bar{
     display: none;
@@ -207,17 +199,7 @@ img{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .next_prev{
-        height: 10%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        color: gray;
-        opacity: 0.5;
-        justify-content: space-around;
-        margin-bottom: 2em;
+        overflow: hidden;
     }
 
     .fa-chevron-left{
@@ -225,20 +207,6 @@ img{
     }
     .fa-chevron-right{
         font-size: 3em;
-    }
-    #next{
-        display: flex;
-        width: 25%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    #previous{
-        display: flex;
-        width: 25%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
     }
 
     #second{
@@ -295,6 +263,11 @@ img{
         display: flex;
         font-size: 2em;
     }
+    #logout{
+        color: white;
+        text-decoration: none;
+        font-size: 1.25em;
+    }
 
     .specialist_footer{
         display: none;
@@ -308,5 +281,10 @@ img{
     #logo{
         width: 100%;
         height: 100%;
+    }
+
+    .specialist > div{
+        overflow: scroll;
+        width: 80%;
     }
 }
