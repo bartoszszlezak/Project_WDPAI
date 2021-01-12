@@ -5,6 +5,7 @@ require_once __DIR__.'/../repository/VUserRepository.php';
 require_once __DIR__.'/../repository/FeedbackRepository.php';
 
 
+
 class SpecialistController extends AppController
 {
     private $vUserRepository;
@@ -13,6 +14,7 @@ class SpecialistController extends AppController
     {
         parent::__construct();
         $this->vUserRepository = new VUserRepository();
+        $this->feedbackRepository = new FeedbackRepository();
     }
 
     public function search()
@@ -32,7 +34,7 @@ class SpecialistController extends AppController
     public function specialist(){
 
         $auth = new Auth();
-        $feedbackRepository = new FeedbackRepository();
+
         $id = $_GET['id'];
         $url = "http://$_SERVER[HTTP_HOST]";
         if (!isset($id) || empty($id)){
@@ -43,7 +45,8 @@ class SpecialistController extends AppController
 
         if(!$this->isPost()){
             $this -> render('specialist_info', [
-                'vUser' => $this->vUserRepository->getById($id)
+                'vUser' => $this->vUserRepository->getById($id),
+                'vFeed' => $this->feedbackRepository->view($id)
             ]);
             exit();
         }

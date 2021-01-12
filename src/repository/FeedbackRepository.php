@@ -1,11 +1,13 @@
 <?php
 
 require_once __DIR__.'/../models/MoreInfo.php';
+require_once __DIR__.'/../models/VFeedback.php';
+require_once __DIR__.'/../models/Feedback.php';
 require_once 'Repository.php';
 
 class FeedbackRepository extends Repository
 {
-    public function getFeedback($specialistId){
+    public function getFeedback($specialistId) :array{
 
         $result = [];
         $stmt = $this->database->connect()->prepare('
@@ -16,15 +18,15 @@ class FeedbackRepository extends Repository
 
         $stmt->bindParam(':specialistId',$specialistId, PDO::PARAM_INT);
         $stmt->execute();
-        $info = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $feedbacks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        foreach ($info as $j) {
+        foreach ($feedbacks as $j) {
             $result[] = new Feedback(
                 $j['id'],
                 $j['user_id'],
                 $j['specialist_id'],
-                $j['comment'],
-                $j['time']
+                $j['time'],
+                $j['comment']
             );
         }
 
@@ -43,14 +45,30 @@ class FeedbackRepository extends Repository
         $stmt->execute();
     }
 
-    public function view(int $specialistId){
+    public function view(int $specialistId) :array{
 
+        $result = [];
         $stmt = $this->database->connect()->prepare('
             SELECT * from vfeedback where specialist_id = :specialistId
             LIMIT 3
         ');
 
-        $stmt->bindParam(':specialistId', $specialist_id, PDO::PARAM_INT);
+        $stmt->bindParam(':specialistId', $specialistId, PDO::PARAM_INT);
         $stmt->execute();
+        $feedbacks = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        foreach ($feedbacks as $j) {
+            $result[] = new VFeedback(
+                $j['id'],
+                $j['name'],
+                $j['surname'],
+                $j['comment'],
+                $j['time'],
+                $j['specialist_id']
+            );
+        }
+
+        return $result;
+
     }
 }

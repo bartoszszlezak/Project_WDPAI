@@ -78,49 +78,64 @@
                 <div id="first_comment">
                     <div id="first_photo"></div>
                     <div id="who_when1">
-                        <p id="id1">Name Surname</p>
-                        <p id="when1">15h ago</p>
+                        <p id="id1">
+                            <?php if($vFeed[0] != null){
+                                echo $vFeed[0]->getName()." ".$vFeed[0]->getSurname();
+                            }?>
+                        </p>
+                        <p id="when1">
+                            <?php if($vFeed[0] != null){
+                                echo $vFeed[0]->getTime();
+                            }?>
+                        </p>
                     </div>
                     <div id="comment1">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                            and more recently with desktop publishing software like Aldus PageMaker including versions of
-                            Lorem Ipsum.</p>
+                        <p>
+                            <?php if($vFeed[0] != null){
+                                echo $vFeed[0]->getComment();
+                            }?>
+                        </p>
                     </div>
                 </div>
                 <div id="second_comment">
                     <div id="second_photo"></div>
                     <div id="who_when2">
-                        <p id="id2">Name Surname</p>
-                        <p id="when2">16h ago</p>
+                        <p id="id2">
+                            <?php if($vFeed[1] != null){
+                                echo $vFeed[1]->getName()." ".$vFeed[1]->getSurname();
+                            }?></p>
+                        <p id="when2">
+                            <?php if($vFeed[1] != null){
+                                echo $vFeed[1]->getTime();
+                            }?>
+                        </p>
                     </div>
                     <div id="comment2">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                            and more recently with desktop publishing software like Aldus PageMaker including versions of
-                            Lorem Ipsum.</p>
+                        <p>
+                            <?php if($vFeed[1] != null){
+                                echo $vFeed[1]->getComment();
+                            }?>
+                        </p>
                     </div>
                 </div>
                 <div id="third_comment">
                     <div id="third_photo"></div>
                     <div id="who_when3">
-                        <p id="id3">Name Surname</p>
-                        <p id="when3">18h ago</p>
+                        <p id="id3">
+                            <?php if($vFeed[2] != null){
+                                echo $vFeed[2]->getName()." ".$vFeed[2]->getSurname();
+                            }?>
+                        </p>
+                        <p id="when3">
+                            <?php if($vFeed[2] != null){
+                                echo $vFeed[2]->getTime();
+                            }?>
+                            /p>
                     </div>
                     <div id="comment3">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                            but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                            and more recently with desktop publishing software like Aldus PageMaker including versions of
-                            Lorem Ipsum.</p>
+                        <p><?php if($vFeed[2] != null){
+                                echo $vFeed[2]->getComment();
+                            }?></p>
                     </div>
                 </div>
             </div>
