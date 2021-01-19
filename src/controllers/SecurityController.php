@@ -121,7 +121,7 @@ class SecurityController extends AppController {
             'about_me' => $about_me,
         ]);
 
-
+        header("Location: {$url}/doctors");
     }
 
     public function logout(){

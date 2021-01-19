@@ -9,6 +9,7 @@ require_once __DIR__.'/../repository/FeedbackRepository.php';
 class SpecialistController extends AppController
 {
     private $vUserRepository;
+    private $feedbackRepository;
 
     public function __construct()
     {
@@ -34,6 +35,7 @@ class SpecialistController extends AppController
     public function specialist(){
 
         $auth = new Auth();
+        $feedbackRepository = new FeedbackRepository();
 
         $id = $_GET['id'];
         $url = "http://$_SERVER[HTTP_HOST]";

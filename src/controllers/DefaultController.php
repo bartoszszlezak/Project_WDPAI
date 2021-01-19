@@ -33,7 +33,7 @@ class DefaultController extends AppController {
             header("Location: {$url}/login");
         }
 
-        if(!$auth->getAuthUser()->getRole() == "doctor"){
+        if(!($auth->getAuthUser()->getRole() == "doctor")){
             header("Location: {$url}/login");
         }
         $this -> render('doctors_view', [
